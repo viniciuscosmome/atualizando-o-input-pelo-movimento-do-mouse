@@ -1,15 +1,14 @@
 # Atualizando o input pelo movimento do mouse
 
-### Primeira versão
+## <div align=center>Preview</div>
 <br />
 
-> Preview
-<br />
-<img width="100%" src="assets/video/prev.gif">
+![Preview](assets/video/video.gif)
 
 <br />
+
 <p>
-Esse código consiste em permitir que o usuário atualize o preço usando o "Segurar e arrastar".
+Esse código consiste em permitir que o usuário atualize o valor usando o "Segurar e arrastar".
 </p>
 
 <br />
