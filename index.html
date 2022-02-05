@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atualizando o input pelo movimento do mouse</title>
+    <link rel="stylesheet" href="assets/icofont/icofont.min.css" />
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+
+    <div id="status">
+        Mouse status:&nbsp;<span>empty</span>
+    </div>
+    <div id="direction">
+        Mouse direction:&nbsp;<span>empty</span>
+    </div><br />
+
+    <div id="input-container" class="input-container">
+        <div class="panel">
+            <i class="icofont-arrow-left icon icon-left"></i>
+
+            <input type="text" class="display-price" value="R$ 0,00">
+
+            <i class="icofont-arrow-right icon icon-right"></i>
+
+            <input type="range" name="price" class="input-price" id="input-price" value="25000" min="5000" max="50000" step="500" />
+        </div>
+        <span class="cover"></span>
+    </div>
+
+    <script src="assets/functions/index.js"></script>
+</body>
+</html>
