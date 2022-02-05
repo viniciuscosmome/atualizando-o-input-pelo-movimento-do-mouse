@@ -26,7 +26,7 @@ const changeInputValue = (direction) => {
     return
 }
 
-container.addEventListener('mousemove', (evt) => {
+const onMouseMove = (evt) => {
     if (!container.className.includes('focus')) return
 
     let direction
@@ -45,9 +45,10 @@ container.addEventListener('mousemove', (evt) => {
     oldPageX = evt.pageX
 
     return changeInputValue(direction)
-})
+}
 
 const loadEvents = () => {
+
     container.addEventListener('mousedown', (evt) => {
         oldPageX = evt.pageX
         container.classList.add('mouse-focus')
@@ -58,6 +59,8 @@ const loadEvents = () => {
         container.classList.remove('mouse-focus')
         mouseStatus.innerText = 'UP'
     })
+
+    container.addEventListener('mousemove', onMouseMove)
 
     inputPrice.addEventListener('input', () => {
         updateInputDisplay(inputPrice.value)
